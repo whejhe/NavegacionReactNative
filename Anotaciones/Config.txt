@@ -1,0 +1,94 @@
+rnce
+
+Enlaces:
+https://dev.to/easybuoy/combining-stack-tab-drawer-navigations-in-react-native-with-react-navigation-5-da#drawer-navigator
+
+Instalacion Previa: Node, git, Visual studio, npm
+
+Variable de Entorno Android Estudio
+ANDROID_HOME 
+C:\Users\noBody\AppData\Local\Android\Sdk
+path:
+C:\Users\noBody\AppData\Local\Android\Sdk\platforms
+C:\Users\noBody\AppData\Local\Android\Sdk\platform-tools
+
+Instalar Expo de manera Global desde cmd:
+npm install -g expo-cli
+
+Crear Proyecto:
+npx create-expo-app@latest RegistroFirebaseExpo --template blank
+npm install react-native expo
+
+Habilitar para web:
+npx expo install react-dom react-native-web @expo/metro-runtime
+
+Navegacion:
+npm install @react-navigation/native @react-navigation/stack @react-navigation/bottom-tabs @react-navigation/drawer
+
+Animaciones y Transiciones:
+npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
+
+Authenticacion:
+npm install firebase react-auth-code-input react-native-keyboard-avoiding-view
+
+Dependencias de Estado:
+npm install redux react-redux redux-thunk
+
+Almacenamiento de Datos:
+npm install @react-native-community/async-storage realm
+
+Gestion de Red:
+npm install axios react-native-url-polyfill
+
+Gestion de Estilos:
+npm install styled-components react-native-vector-icons
+
+Comenzar Proyecto:
+npm start
+
+Para estilos y formato:
+npx expo lint
+y
+npx expo install -- --save-dev prettier eslint-config-prettier eslint-plugin-prettier
+
+en .eslintrc.js
+module.exports = {
+  extends: ["expo", "plugin:prettier/recommended"],
+  plugins: ["prettier"],
+  rules: {
+    quotes: [0, "single", { avoidEscape: true, allowTemplateLiterals: true }],
+    "prettier/prettier": [
+      "error",
+      {
+        singleQuote: false, // Permitir tanto comillas simples como dobles
+        endOfLine: "auto",
+      },
+    ],
+  },
+};
+
+
+en .prettierrc
+{
+  "singleQuote": false,
+  "endOfLine": "auto",
+  "trailingComma": "es5",
+  "arrowParens": "avoid"
+}
+
+
+Dependencias para habilitar la navegacion entre paginas:
+npm install @react-navigation/native 
+npm install @react-navigation/stack
+npm install react-native-screens 
+npm install react-native-safe-area-context
+npm install @react-navigation/bottom-tabs
+npm install @react-navigation/drawer
+
+npx expo install react-native-gesture-handler 
+npx expo install react-native-reanimated 
+npx expo install react-native-screens 
+npx expo install react-native-safe-area-context 
+npx expo install @react-native-community/masked-view
+
+
