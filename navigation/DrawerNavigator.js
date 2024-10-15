@@ -11,7 +11,7 @@ const Drawer = createDrawerNavigator();
 
 const DrawerNavigator = () => {
     return (
-        <Drawer.Navigator headerMode="none">
+        <Drawer.Navigator>
             <Drawer.Screen name="Home" component={TabNavigator} />
             <Drawer.Screen name="Contact" component={ContactStackNavigator} />
         </Drawer.Navigator>
